@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Si une URL directe à une ressource existe, servez-la directement
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
+RewriteRule ^ - [L]
+
+# Si la requête précédente ne correspond pas à un fichier ou un répertoire réel, redirigez vers index.html
+RewriteRule ^ /index.html [L]
