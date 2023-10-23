@@ -25,5 +25,23 @@ provide('bus', bus)
 /* Animation de transition de page */
 @import "@/assets/scss/animation/fade.scss";
 
-/* temp */
+/* template */
+section {
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    opacity: 0.6;
+  }
+}
 </style>

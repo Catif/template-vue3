@@ -5,11 +5,8 @@
 <template>
   <section>
     <h1>
-      Template VueJS
+      Page not found
     </h1>
-    <h2>
-      Version 1.1.0
-    </h2>
   </section>
 </template>
 
