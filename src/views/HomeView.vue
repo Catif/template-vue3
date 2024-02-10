@@ -3,16 +3,12 @@
 </script>
 
 <template>
-  <section>
-    <h1>
+  <section class="h-full flex justify-center items-center flex-col gap-6">
+    <h1 class="text-5xl">
       Template VueJS
     </h1>
-    <h2>
+    <h2 class="text-4xl opacity-60">
       Version 1.1.0
     </h2>
   </section>
 </template>
-
-<style lang="scss" scoped>
-
-</style>

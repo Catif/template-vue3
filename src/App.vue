@@ -9,7 +9,7 @@ provide('bus', bus)
 </script>
 
 <template>
-  <article>
+  <article class="min-h-full w-full">
     <RouterView v-slot="{ Component }">
       <transition name="fade" mode="out-in">
         <component :is="Component" />
@@ -18,30 +18,14 @@ provide('bus', bus)
   </article>
 </template>
 
-<style lang="scss">
-@import "@/assets/scss/reset.scss";
-@import "@/assets/scss/basic.scss";
 
-/* Animation de transition de page */
-@import "@/assets/scss/animation/fade.scss";
-
-/* template */
-section {
-  height: 100%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 1.5rem;
-
-  h1 {
-    font-size: 3rem;
-  }
-
-  h2 {
-    font-size: 2rem;
-    opacity: 0.6;
-  }
+<style scoped>
+.fade-enter-active,
+.fade-leave-active {
+	transition: all 0.2s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+	opacity: 0;
 }
 </style>
