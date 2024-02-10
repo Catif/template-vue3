@@ -8,7 +8,7 @@
       Template VueJS
     </h1>
     <h2 class="text-4xl opacity-60">
-      Version 1.1.0
+      Version 2.0.0
     </h2>
   </section>
 </template>
