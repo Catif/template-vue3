@@ -1,7 +1,14 @@
 {
   "rules": {
     "no-multiple-empty-lines": ["error", { "max": 3, "maxEOF": 1 }],
-    "no-console": "off" // DURING DEVELOPMENT
+    "no-console": "off",
+    "semi": ["error", "never"],
+    "comma-dangle": ["error", {
+      "arrays": "always-multiline",
+      "objects": "always-multiline",
+      "imports": "always-multiline",
+      "exports": "always-multiline",
+      "functions": "never"
+    }]
   },
-  "extends": "@antfu"
 }
